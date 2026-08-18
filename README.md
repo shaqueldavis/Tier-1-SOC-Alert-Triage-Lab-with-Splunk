@@ -2,7 +2,7 @@
 
 ## Objective
 
-OBJECTIVE HERE
+Use Splunk to ingest Windows security and Sysmon events, investigate three alerts, classify each alert, document the evidence, close a false positive, and escalate a confirmed incident according to a written playbook.
 
 ## Project Results
 
@@ -32,9 +32,47 @@ To follow this lab, you will need:
 
 ## Steps
 
-### Phase [01. Draw Diagram](Project%20Phases/01.%20Draw%20Diagram.md)
+### Phase 1. Repeated failed logins
 
-### Phase [02. Download Windows ISO](Project%20Phases/02.%20Download%20Windows%20ISO.md)
+Generate multiple Windows failed-logon events and create a Splunk search for Event ID 4625.
 
-### Phase [03. Un-sync Microsoft Edge](Project%20Phases/03.%20Un-sync%20Microsoft%20Edge.md)
+Investigate:
+
+Targeted username
+Source workstation or IP
+Number and frequency of attempts
+Logon type
+Whether a successful login followed
+Whether the activity matches expected testing
+
+Final disposition: either suspicious password guessing or an approved test/false positive.
+
+### Phase 2. Encoded PowerShell execution
+
+Execute a harmless encoded PowerShell command inside your isolated Windows VM, such as one that only writes a test message.
+
+Detect it through:
+
+Sysmon Event ID 1
+PowerShell Event ID 4104, if script-block logging is enabled
+Command-line arguments containing -EncodedCommand
+
+Map the behavior to MITRE ATT&CK and document why encoded PowerShell deserves investigation even when the demonstrated command is harmless.
+
+Final disposition: controlled simulation, but describe how the same evidence would be escalated in production.
+
+### Phase 3. Local administrator-group modification
+
+Create a temporary test account and add it to the local Administrators group.
+
+Investigate relevant Windows events, such as:
+
+Account creation
+Security-group membership change
+Actor account
+Target account
+Affected endpoint
+Whether the change was authorized
+
+Final disposition: escalate as an unauthorized privilege change, then remove the test account as your containment step.
 
