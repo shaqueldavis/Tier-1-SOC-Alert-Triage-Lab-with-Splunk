@@ -1,7 +1,8 @@
 # Estimated time:
 
-|---|---|
+
 | Phase	| Estimated time |
+|---|---|
 | Install Splunk	| 1 hour |
 | Connect Windows/Sysmon logs |	1–2 hours |
 | Build three searches	| 2–3 hours |
