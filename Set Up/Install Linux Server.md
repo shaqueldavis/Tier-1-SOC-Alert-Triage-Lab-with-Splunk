@@ -75,3 +75,45 @@ Hit space bar on `Install OpenSSH server`. Then select done.
 This will take a while.
 
 <img width="2479" height="1356" alt="image" src="https://github.com/user-attachments/assets/24d3028e-e48c-4e56-b783-e5b97f2c51c3" />
+
+<img width="2480" height="1361" alt="image" src="https://github.com/user-attachments/assets/8bdda3a4-37f8-4ea8-9611-7f4857ae477b" />
+
+<img width="983" height="127" alt="Screenshot 2026-08-18 230508" src="https://github.com/user-attachments/assets/d474a966-4aff-46b8-a799-97332616fff5" />
+
+The “failed unmounting” message does not mean the Ubuntu installation failed.
+
+💿 Disconnect the ISO in VMware
+
+While the VM remains on this screen:
+
+In VMware’s top menu, select VM.
+Select Removable Devices.
+Select CD/DVD (SATA).
+Choose Remove.
+
+Then click inside the VM and press Enter.
+
+<img width="1569" height="697" alt="image" src="https://github.com/user-attachments/assets/402d2e71-e954-4fbd-b0c7-0a65e74bef74" />
+
+<img width="1493" height="1431" alt="image" src="https://github.com/user-attachments/assets/5b3e9700-bc2b-4d7a-894d-2c4d0f825877" />
+
+<img width="692" height="138" alt="image" src="https://github.com/user-attachments/assets/9a3865a0-8e23-4bdd-9869-24a96871d052" />
+
+👤 Enter your username first
+
+Enter the username you created during Ubuntu installation, then press Enter.
+
+Ubuntu will then display:
+
+Password:
+
+Enter the corresponding password and press Enter again.
+
+<img width="1367" height="1197" alt="image" src="https://github.com/user-attachments/assets/8923473d-2c75-4902-a840-51557951be04" />
+
+update
+```
+sudo apt update
+sudo apt full-upgrade -y
+```
+<img width="1168" height="253" alt="image" src="https://github.com/user-attachments/assets/553be234-b824-4595-9ace-4cb9bcdb4493" />
