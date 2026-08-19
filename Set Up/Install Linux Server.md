@@ -36,6 +36,17 @@
 
 <img width="2475" height="1369" alt="image" src="https://github.com/user-attachments/assets/1a939e6d-4d2c-407a-b067-6ef2299a989e" />
 
+<img width="2484" height="1367" alt="Screenshot 2026-08-18 222423" src="https://github.com/user-attachments/assets/c712863f-f280-48b2-b6b9-efc80e680f07" />
 
+- Network interface: ens33
+- Address configuration: DHCPv4
+- Installation-time IP address: 192.168.113.159/24
+- Network mode: VMware NAT
 
+<img width="2482" height="1366" alt="Screenshot 2026-08-18 222517" src="https://github.com/user-attachments/assets/022f033e-ecfc-4923-97e8-77264e2c2fb3" />
 
+<img width="2482" height="1357" alt="image" src="https://github.com/user-attachments/assets/adbb58ef-828b-4f73-aff6-453d12c0c0c0" />
+
+<img width="2470" height="1356" alt="image" src="https://github.com/user-attachments/assets/13bd25d5-7403-4486-b84a-84a6de92ec7c" />
+
+<img width="2477" height="1360" alt="image" src="https://github.com/user-attachments/assets/e187c454-60f0-48ab-a425-b5a4f886b6c1" />
