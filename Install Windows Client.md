@@ -1,4 +1,4 @@
-# Windows VM Setup
+# Install Windows Client 
 
 To download, install, and configure the Windows 11 VM, follow the steps outlined in the links below.
 
