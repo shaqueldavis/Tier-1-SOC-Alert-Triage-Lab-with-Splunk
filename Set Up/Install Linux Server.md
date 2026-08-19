@@ -117,3 +117,15 @@ sudo apt update
 sudo apt full-upgrade -y
 ```
 <img width="1168" height="253" alt="image" src="https://github.com/user-attachments/assets/553be234-b824-4595-9ace-4cb9bcdb4493" />
+
+When the updates finish, reboot:
+
+sudo reboot
+
+Log back in and then shut down cleanly:
+
+sudo shutdown -h now
+
+Wait until VMware shows the VM as powered off.
+
+📸 Create the VMware snapshot
