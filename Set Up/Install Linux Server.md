@@ -156,21 +156,57 @@ Select `Done` and then `Continue`.
 <br>
 <br>
 
+Enter your name, the servers name, your user name, and select a password. Then hit `Done`.
+
+Take note of the username and password, it will be required for login.
+
 <img width="2481" height="1356" alt="image" src="https://github.com/user-attachments/assets/0a795b2d-044c-4585-a7e1-45eab4b07ef6" />
 
+<br>
+<br>
+<br>
+<br>
+
+Leave `Skip for now` selected and select `Continue`.
 <img width="2476" height="1358" alt="image" src="https://github.com/user-attachments/assets/88258f5a-8a27-4280-97ce-9a0ae163ebd6" />
 
-Hit space bar on `Install OpenSSH server`. Then select done.
+<br>
+<br>
+<br>
+<br>
+
+Hit space bar on `Install OpenSSH server`. Then select 'Done`.
 
 <img width="2483" height="1349" alt="image" src="https://github.com/user-attachments/assets/0dafc477-ad53-4b26-875c-4dad024542dd" />
 
+<br>
+<br>
+<br>
+<br>
+
+Leave everything unselected and hit `Done`.
+
 <img width="2478" height="1359" alt="image" src="https://github.com/user-attachments/assets/a49e0503-61fe-46c8-8004-3d87ebedaee1" />
 
-This will take a while.
+<br>
+<br>
+<br>
+<br>
+
+Installation will begin. This will take a while.
+
+Select `Reboot Now` once it finishes.
 
 <img width="2479" height="1356" alt="image" src="https://github.com/user-attachments/assets/24d3028e-e48c-4e56-b783-e5b97f2c51c3" />
-
+<br><br>
 <img width="2480" height="1361" alt="image" src="https://github.com/user-attachments/assets/8bdda3a4-37f8-4ea8-9611-7f4857ae477b" />
+
+<br>
+<br>
+<br>
+<br>
+
+Don't be alarmed. `[FAILED] Failed unmounting cdrom.mount...` is not an error message. 
 
 <img width="983" height="127" alt="Screenshot 2026-08-18 230508" src="https://github.com/user-attachments/assets/d474a966-4aff-46b8-a799-97332616fff5" />
 
@@ -188,38 +224,62 @@ Choose Remove.
 Then click inside the VM and press Enter.
 
 <img width="1569" height="697" alt="image" src="https://github.com/user-attachments/assets/402d2e71-e954-4fbd-b0c7-0a65e74bef74" />
-
+<br><br>
 <img width="1493" height="1431" alt="image" src="https://github.com/user-attachments/assets/5b3e9700-bc2b-4d7a-894d-2c4d0f825877" />
 
-<img width="692" height="138" alt="image" src="https://github.com/user-attachments/assets/9a3865a0-8e23-4bdd-9869-24a96871d052" />
+<br>
+<br>
+<br>
+<br>
+
+### 3. Login In & Update
+
+You will be prompted to login.
 
 👤 Enter your username first
 
 Enter the username you created during Ubuntu installation, then press Enter.
 
 Ubuntu will then display:
-
+```
 Password:
-
+```
 Enter the corresponding password and press Enter again.
 
+<img width="692" height="138" alt="image" src="https://github.com/user-attachments/assets/9a3865a0-8e23-4bdd-9869-24a96871d052" />
+<br><br>
 <img width="1367" height="1197" alt="image" src="https://github.com/user-attachments/assets/8923473d-2c75-4902-a840-51557951be04" />
 
-update
+update. This will take a while.
 ```
 sudo apt update
+```
+
+Then upgrade
+```
 sudo apt full-upgrade -y
 ```
+
 <img width="1168" height="253" alt="image" src="https://github.com/user-attachments/assets/553be234-b824-4595-9ace-4cb9bcdb4493" />
 
+<br>
+<br>
+<br>
+<br>
+
 When the updates finish, reboot:
-
+```
 sudo reboot
-
+```
 Log back in and then shut down cleanly:
-
+```
 sudo shutdown -h now
-
+```
 Wait until VMware shows the VM as powered off.
 
-📸 Create the VMware snapshot
+📸 Create a VMware snapshot
+
+`VM` > `Snapshot` > `Take Snapshot...`.
+
+<img width="1650" height="678" alt="image" src="https://github.com/user-attachments/assets/01204d29-16cd-4f59-b7d1-3d33cd97ec38" />
+
