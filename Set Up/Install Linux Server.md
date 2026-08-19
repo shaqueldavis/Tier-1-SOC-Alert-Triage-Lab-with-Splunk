@@ -66,5 +66,10 @@ Set to max...
 
 <img width="2476" height="1358" alt="image" src="https://github.com/user-attachments/assets/88258f5a-8a27-4280-97ce-9a0ae163ebd6" />
 
+Hit space bar on `Install OpenSSH server`. Then select done.
 
+<img width="2483" height="1349" alt="image" src="https://github.com/user-attachments/assets/0dafc477-ad53-4b26-875c-4dad024542dd" />
 
+<img width="2478" height="1359" alt="image" src="https://github.com/user-attachments/assets/a49e0503-61fe-46c8-8004-3d87ebedaee1" />
+
+<img width="2479" height="1356" alt="image" src="https://github.com/user-attachments/assets/24d3028e-e48c-4e56-b783-e5b97f2c51c3" />
