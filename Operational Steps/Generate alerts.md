@@ -24,3 +24,9 @@ After the 5th attempt you may have to restart your device.
 After restarting your device, login as normal.
 
 Before touching Splunk, let's verify that Windows actually generated the event.
+```
+Get-WinEvent -FilterHashtable @{
+    LogName='Security'
+    Id=4625
+} -MaxEvents 10
+```
