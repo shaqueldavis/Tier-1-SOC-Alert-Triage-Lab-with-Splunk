@@ -73,7 +73,7 @@ Now let's confirm that it is being ingested to Splunk.
 
 If the Splunk dashboard is not responding check two things. In my experience VMware Workstation Pro's NAT service stops running or needs to be restarted after long periods of inactivity, which stops the VMs from receiving internet access.
 
-First, make sure you have internet access in the bottom right corner
+First, check to see if you have internet access in the bottom right corner
 
 <img width="460" height="214" alt="Screenshot 2026-08-24 160015" src="https://github.com/user-attachments/assets/eaf95451-7c05-4f2f-8e99-1ffeadcf876d" />
 
@@ -82,7 +82,7 @@ First, make sure you have internet access in the bottom right corner
 <br>
 <br>
 
-If you do not, open services by searching for it in the start menu. click on any service and type `v`. You should see "VMware NAT Service.
+If you do not, on your host computer, open services by searching for it in the start menu. click on any service and type `v`. You should see "VMware NAT Service.
 
 Right click it and choose `Start` if it is not running. If it is running, choose `Restart`.
 
