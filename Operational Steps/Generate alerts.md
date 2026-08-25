@@ -133,11 +133,11 @@ index=* 4625
 <br>
 <br>
 
-Run the 10-minute detection
+Now let's run a search that we can later save as a 10-minute detection alert.
 
-In Splunk, set the time range to:
+In Splunk, set the time range to the Last 15 minutes.
 
-Last 15 minutes
+Search for:
 
 ```spl
 index=* 4625
@@ -148,8 +148,14 @@ index=* 4625
 
 <img width="2482" height="1378" alt="image" src="https://github.com/user-attachments/assets/28840441-0712-4a44-bef9-495c8a1e5bb0" />
 
+<br>
+<br>
+<br>
+<br>
 
+Because that is working it's time to refine the SPL (Search Processing Language) input to be more specific.
 
+Splunk is detecting the string `4625`, but before we turn this into an alert, we want to make sure the search is more specific. 
 ```spl
 index=* sourcetype="XmlWinEventLog:Security" "<EventID>4625</EventID>"
 | bin _time span=10m
@@ -157,10 +163,14 @@ index=* sourcetype="XmlWinEventLog:Security" "<EventID>4625</EventID>"
 | where count >= 5
 ```
 
-I changed the time frame to the last 60 minutes because some time passed.
+I also changed the time frame to the last 60 minutes because some time passed.
 
 <img width="2482" height="1392" alt="image" src="https://github.com/user-attachments/assets/516dda05-dd14-4473-b9c3-c68cc7b092aa" />
 
+<br>
+<br>
+<br>
+<br>
 
 The detection logic is:
 ```
@@ -177,7 +187,7 @@ Count events
 🚨 Detection
 ```
 
-
+Great. It's still working. Now lets modify it slightly more to make it more useful for a SOC analyst to review by changing the `count` field to `failed_logins`. This way we know exactly what is being counted.
 ```spl
 index=* sourcetype="XmlWinEventLog:Security" "<EventID>4625</EventID>"
 | bin _time span=10m
@@ -186,4 +196,11 @@ index=* sourcetype="XmlWinEventLog:Security" "<EventID>4625</EventID>"
 ```
 
 <img width="2486" height="1386" alt="image" src="https://github.com/user-attachments/assets/567d3fdd-d508-4af8-9859-ddb0302224bf" />
+
+<br>
+<br>
+<br>
+<br>
+
+Perfect. Now we have the SPL we can turn into an automated alert. 
 
