@@ -1,4 +1,4 @@
-# Title here
+# Generate Events
 
 Now we're moving into the actual SOC workflow.
 
