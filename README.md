@@ -23,6 +23,7 @@ To follow this lab, you will need:
 ### Skills Learned
 
 * **SKILL HERE** - description of how skill was used and results.
+* **Detection Engineering** - DESCRIPTION HERE.
 
 ### Tools and Technologies Used
 
