@@ -27,7 +27,7 @@ Now we should update our ticket description in Jira to reflect this. Before we d
 
 In the MITRE ATT&CK® framework, T1110 designates Brute Force. It falls under the Credential Access tactic (TA0006) and describes techniques where adversaries systematically guess or exhaust combinations of usernames, passwords, or hashes to gain valid account access. This step adds professionalism.  
 
-Copy and paste the following into Jira, replacing the old ticket description.
+Copy and paste the following into Jira, replacing the old ticket description. Use 3 backticks (`) to create a code block in the description of the ticket.
 ```text
 =======================================================================
 INCIDENT TRIAGE / INVESTIGATION NOTES
@@ -72,4 +72,4 @@ REFERENCES & MAPPING SOURCES:
 =======================================================================
 ```
 
-<img width="2862" height="1538" alt="image" src="https://github.com/user-attachments/assets/51591e76-9f91-4fcb-9384-d029ccfa3c6a" />
+<img width="2862" height="1518" alt="image" src="https://github.com/user-attachments/assets/2e9d778f-f4ba-4a18-bfc4-3c0243abf5ce" />
