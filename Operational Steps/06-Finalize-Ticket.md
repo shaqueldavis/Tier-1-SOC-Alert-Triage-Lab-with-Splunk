@@ -13,7 +13,7 @@ In other words, the status is undetermined.
 <br>
 <br>
 
-## Determine severity/disposition
+## Document Findings & Determine severity/disposition
 
 Because we can't confidently determine that this alert is benign, the best decistion would be to escilate it and keep the current severity level (medium). 
 
@@ -23,19 +23,12 @@ One other thing that we could do is reach out to the Detection Engineering depar
 
 If we knew our Detection Engineering Department has been running tests lately, reaching out to them with questions regarding the alert would be an intuitive action. Being a SOC analyst is not always black and white. There are often times where we have to make decisions based on analytical thinking unique to our environment. 
 
+Now we should update our ticket description in Jira to reflect this. Before we do, one thing that would enhance the documentation is to include a possible mapping to the MITRE ATT&CK framework, specificly MITRE ATT&CK Mapping: T1110.
 
+In the MITRE ATT&CK® framework, T1110 designates Brute Force. It falls under the Credential Access tactic (TA0006) and describes techniques where adversaries systematically guess or exhaust combinations of usernames, passwords, or hashes to gain valid account access. This step adds professionalism.  
 
-
-
-
-
-
-
-
-
-Let's update our ticket description in Jira to reflect this.
-
-```
+Copy and paste the following into Jira, replacing the old ticket description.
+```text
 =======================================================================
 INCIDENT TRIAGE / INVESTIGATION NOTES
 =======================================================================
@@ -48,6 +41,7 @@ Event ID:            4625
 Log Source Type:     XmlWinEventLog:Security
 malicious vs. benign: undetermined
 Disposition: Escalate for further investigation
+Potential MITRE ATT&CK Mapping: T1110 — Brute Force
 
 AUTHENTICATION DETAILS: 
 ------------------------------------------------------------------------
