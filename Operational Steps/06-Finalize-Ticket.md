@@ -73,3 +73,13 @@ REFERENCES & MAPPING SOURCES:
 ```
 
 <img width="2862" height="1518" alt="image" src="https://github.com/user-attachments/assets/2e9d778f-f4ba-4a18-bfc4-3c0243abf5ce" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+## Escalate or close
+
+When it comes to escalating a ticket the exact mechanism depends on the organization's workflow, but commonly the ticket/incident is reassigned or escalated within the organization's case-management system, with the Tier-1 investigation documented so Tier 2 can pick up where Tier 1 stopped.
