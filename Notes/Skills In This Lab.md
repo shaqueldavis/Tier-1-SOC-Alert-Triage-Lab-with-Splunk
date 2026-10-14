@@ -9,8 +9,6 @@ After completing this lab, you can substantiate:
 - True-positive and false-positive classification
 - Alert severity assignment
 - SOC ticket documentation
-- Triage-playbook development
 - Incident escalation and handoff
-- Basic mitigation
 - MITRE ATT&CK mapping
 - Security investigation documentation
