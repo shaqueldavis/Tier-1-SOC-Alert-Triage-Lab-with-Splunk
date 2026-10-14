@@ -79,7 +79,12 @@ REFERENCES & MAPPING SOURCES:
 <br>
 <br>
 
-
 ## Escalate or close
 
 When it comes to escalating a ticket the exact mechanism depends on the organization's workflow, but commonly the ticket/incident is reassigned or escalated within the organization's case-management system, with the Tier-1 investigation documented so Tier 2 can pick up where Tier 1 stopped.
+
+In our case we are using Jira as our case management system. One way we can escalate a ticket in Jira is simply by changing the assignee from a Tier 1 Analyst to a Tier 2 Analyst.
+
+In my case I will change my assignee from "SOC Analyst 1" to "Shaquel Davis" who is an admin in my Jira setup. 
+
+<img width="2544" height="1312" alt="image" src="https://github.com/user-attachments/assets/21fbb99a-f37c-4ba2-9aca-f111f17b865c" />
