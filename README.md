@@ -2,13 +2,13 @@
 
 ## Objective
 
-Use Splunk to ingest Windows security and Sysmon events, investigate three alerts, classify each alert, document the evidence, close a false positive, and escalate a confirmed incident according to a written playbook.
+(OBJECTIVE HERE)
 
 ## Project Results
 
 The completed workflow successfully:
 
-- RESULTS LISTED HERE
+- (RESULTS LISTED HERE)
 
 ### Before You Begin
 
@@ -22,7 +22,7 @@ To follow this lab, you will need:
 
 ### Skills Learned
 
-* **SKILL HERE** - description of how skill was used and results.
+* **(SKILL HERE)** - (description of how skill was used and results.)
 * **Detection Engineering** - DESCRIPTION HERE.
 
 ### Tools and Technologies Used
